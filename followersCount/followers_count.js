@@ -6,7 +6,14 @@ document.getElementById('countDisplay').innerHTML=count; // Display the count in
 function increaseCount() {
   count++; // Increment the count by 1
   displayCount();
-   checkCountValue(); // Display the count
+  checkCountValue();
+    
+}
+function resetCount() {
+    count = 0; // Reset count to 0
+    document.getElementById("countDisplay").innerHTML = count;
+
+    displayCount();
 }
 function checkCountValue() {
   if (count === 10) {
